@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siemon Jhon L. Obias Portfolio</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a class="logo" data-target="home">MyPortfolio</a>
+      <button id="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a class="nav-link active" data-target="home">Home</a></li>
+        <li><a class="nav-link" data-target="about">About Me</a></li>
+        <li><a class="nav-link" data-target="skills">Skills</a></li>
+        <li><a class="nav-link" data-target="projects">Projects</a></li>
+        <li><a class="nav-link" data-target="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME VIEW -->
+  <section id="home" class="hero-screen active-page">
+    <div class="container hero-welcome-container">
+      <h1 class="hero-welcome-title">WELCOME TO MY PORTFOLIO!</h1>
+      <p class="hero-welcome-sub">Discover my Profile, Skills, and Projects.</p>
+      <button class="btn" id="click-me-btn" data-target="about">Click Me</button>
+    </div>
+  </section>
+
+ <!-- ABOUT ME VIEW -->
+  <section id="about" class="page-section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="hero-content">
+        <!-- Profile Photo -->
+       <img src="images/id.jpg" alt="Siemon Jhon L. Obias" class="hero-photo" />
+        <div class="hero-text">
+          <h2>Siemon Jhon L. Obias</h2>
+          <p class="year-section">1st Year, Computer Engineering</p>
+          <!-- Added Facebook Profile Link -->
+          <p style="margin-bottom: 0.8rem;">
+            <a href="https://www.facebook.com/siemonjhon.leoligaoobias/photos" target="_blank" rel="noopener" style="color: var(--accent-primary); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; transition: opacity 0.3s;">
+              🌐 Visit My Facebook Profile
+            </a>
+          </p>
+          <p>Hello there! I'm Siemon Obias, passionate about technology and creating useful applications.</p>
+        </div>
+      </div>
+
+      <div class="hobbies-container">
+        <h3>Hobbies</h3>
+        <p>Playing Basketball, Watching Anime, and Exploring New Things.</p>
+      </div>
+
+      <div class="favorite-song">
+        <h3>Favorite Song</h3>
+        <!-- Favorite Song / Album Cover Image with Title Example -->
+        <div class="song-card-example" style="text-align: center;">
+           <img src="images/Screenshot 2026-10-26 200852.png" alt="Best Part Album Cover" class="album-cover" />
+            <p style="font-weight: 600; color: var(--text-main); margin-top: 0.5rem;">Best Part</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">H.E.R. ft. Daniel Caesar</p>
+        </div>
+      </div>
+      
+      <p style="margin-top: 1.5rem; text-align: center;">MY DREAM IS TO HAVE A FINANCIAL CAPABILITY AND STABLE JOB.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS VIEW -->
+  <section id="skills" class="page-section skills">
+    <div class="container">
+      <h2>Skills</h2> 
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Building website structure and content.</p>
+        </div>
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Styling and layout design.</p>
+        </div>
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Interactive website features and animations.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Python</h3>
+          <p>Programming and problem-solving skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS VIEW -->
+  <section id="projects" class="page-section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>A website showcasing my skills and projects.</p>
+          <a href="#" class="btn" target="_blank" rel="noopener">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Task Manager App</h3>
+          <p>A simple app to manage daily tasks with reminders.</p>
+          <button class="btn view-task-app">View Project</button>
+        </div>
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>A web app providing weather updates and forecasts.</p>
+          <button class="btn view-weather-app">View Project</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TASK MANAGER APP VIEW -->
+  <section id="task-manager-app" class="page-section">
+    <div class="container">
+      <h2>Task Manager App</h2>
+      <div class="app-container">
+        <div class="task-input-group">
+          <input type="text" id="task-input" placeholder="Enter new task..." />
+          <input type="text" id="reminder-input" placeholder="Reminder time (e.g., 5:00 PM)" />
+          <button class="btn" id="add-task-btn" style="margin-top: 0;">Add Task</button>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <button class="btn back-to-projects" style="background: transparent; border: 1px solid var(--card-border); color: var(--text-main);">Back to Projects</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEATHER DASHBOARD APP VIEW -->
+  <section id="weather-app" class="page-section">
+    <div class="container">
+      <h2>Weather Dashboard</h2>
+      <div class="app-container">
+        <div class="weather-search">
+          <input type="text" id="city-input" placeholder="Enter city name (e.g., Manila, Tokyo)..." />
+          <button class="btn" id="get-weather-btn" style="margin-top: 0;">Search</button>
+        </div>
+        <div class="weather-display" id="weather-display">
+          <h3 id="weather-city" style="color: var(--text-main); font-size: 1.5rem;">Manila, Philippines</h3>
+          <div class="weather-temp" id="weather-temp">31°C</div>
+          <div class="weather-condition" id="weather-condition">Partly Cloudy</div>
+          <div class="weather-details" id="weather-details">Humidity: 70% | Wind: 12 km/h</div>
+        </div>
+        <div style="margin-top: 1.5rem; text-align: center;">
+          <button class="btn back-to-projects" style="background: transparent; border: 1px solid var(--card-border); color: var(--text-main);">Back to Projects</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT VIEW -->
+  <section id="contact" class="page-section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="form-message" class="form-message"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Siemon Jhon L. Obias. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
